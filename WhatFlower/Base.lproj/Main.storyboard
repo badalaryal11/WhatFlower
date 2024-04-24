@@ -17,16 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bdz-en-55b">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bdz-en-55b" secondAttribute="height" multiplier="1:1" id="Pfs-jT-34g"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-ov-NuF">
+                                <rect key="frame" x="16" y="528" width="361" height="254"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bdz-en-55b" secondAttribute="bottom" id="7VG-o0-80J"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bdz-en-55b" secondAttribute="trailing" id="InZ-P2-ffy"/>
-                            <constraint firstItem="Bdz-en-55b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gEJ-YL-ueg"/>
-                            <constraint firstItem="Bdz-en-55b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sDI-aW-nLE"/>
+                            <constraint firstItem="Bdz-en-55b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4VV-cG-ib8"/>
+                            <constraint firstItem="Jyi-ov-NuF" firstAttribute="top" secondItem="Bdz-en-55b" secondAttribute="bottom" constant="32" id="NU3-Tm-B6X"/>
+                            <constraint firstItem="Bdz-en-55b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TqC-3u-znz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jyi-ov-NuF" secondAttribute="bottom" constant="36" id="hSO-dn-wdV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jyi-ov-NuF" secondAttribute="trailing" constant="16" id="hvO-3r-90d"/>
+                            <constraint firstItem="Jyi-ov-NuF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qLO-bb-kyf"/>
+                            <constraint firstItem="Bdz-en-55b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uEc-rg-u1P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ORJ-xK-FpU">
@@ -38,11 +50,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="Bdz-en-55b" id="LR3-UY-FYr"/>
+                        <outlet property="label" destination="Jyi-ov-NuF" id="m4y-PX-RrT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="651" y="-13"/>
+            <point key="canvasLocation" x="372" y="-48"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yeU-4C-Hhk">
